@@ -1,0 +1,3 @@
+datetime,close,exchange_code,expiry_date,high,low,open,open_interest,product_type,right,stock_code,strike_price,volume
+2023-05-04 09:46:00,610.0,NFO,18-MAY-2023,610.0,610.0,610.0,200,Options,Call,NIFTY,17550.0,100.0
+2023-05-04 11:38:00,655.0,NFO,18-MAY-2023,655.0,655.0,655.0,250,Options,Call,NIFTY,17550.0,50.0
