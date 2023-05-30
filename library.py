@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from sklearn import resample
+from sklearn.utils import resample
 
 def SMA(
     close: pd.Series,
