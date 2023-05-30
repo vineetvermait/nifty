@@ -166,6 +166,30 @@ def calculate_ATR(df, period):
     ATR = true_range.rolling(period).mean()
     return ATR
 
+def calculate_ADX(df, period, n_ADX):
+    df['H-L']=abs(df['high']-df['low'])
+    df['H-PC']=abs(df['high']-df['close'].shift(1))
+    df['L-PC']=abs(df['low']-df['close'].shift(1))
+    df['TR']=df[['H-L','H-PC','L-PC']].max(axis=1)
+    df['+DM']=np.where((df['high']>df['high'].shift(1))&(df['high']-df['high'].shift(1) > df['low'].shift(1)-df['low']),df['high']-df['high'].shift(1),0)
+    df['-DM']=np.where((df['low']<df['low'].shift(1))&(df['low'].shift(1)-df['low'] > df['high']-df['high'].shift(1)),df['low'].shift(1)-df['low'],0)
+    TR_n = df['TR'].rolling(period).sum()
+    DMplus_n = df['+DM'].rolling(period).sum()
+    DMminus_n = df['-DM'].rolling(period).sum()
+    df['+DI']=100*(DMplus_n/TR_n)
+    df['-DI']=100*(DMminus_n/TR_n)
+    df['DX']=100*(abs((df['+DI']-df['-DI'])/(df['+DI']+df['-DI'])))
+    ADX = df['DX'].rolling(n_ADX).mean()
+    # df['ADX']=ADX
+    return ADX
+
+def CCI(df, period):
+    TP = (df['high'] + df['low'] + df['close']) / 3 
+    CCI = (TP - TP.rolling(period).mean()) / (0.015 * TP.rolling(period).std())
+    return CCI
+
+def ROC(df, period, column='close'):
+    return df[column].diff(period) / df[column].shift(period) * 100.0
 
 def load(path):
   df = pd.read_csv(path)
