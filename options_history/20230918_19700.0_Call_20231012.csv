@@ -1,0 +1,7 @@
+close,datetime,exchange_code,expiry_date,high,low,open,open_interest,product_type,right,stock_code,strike_price,volume
+616.5,2023-09-18 09:15:00,NFO,2023-10-12,616.5,616.5,616.5,0,Options,Call,NIFTY,19700.0,0
+616.5,2023-09-18 09:17:00,NFO,2023-10-12,616.5,616.5,616.5,0,Options,Call,NIFTY,19700.0,0
+616.5,2023-09-18 09:20:00,NFO,2023-10-12,616.5,616.5,616.5,0,Options,Call,NIFTY,19700.0,0
+616.5,2023-09-18 09:25:00,NFO,2023-10-12,616.5,616.5,616.5,0,Options,Call,NIFTY,19700.0,0
+616.5,2023-09-18 09:29:00,NFO,2023-10-12,616.5,616.5,616.5,0,Options,Call,NIFTY,19700.0,0
+616.5,2023-09-18 15:12:00,NFO,2023-10-12,616.5,616.5,616.5,0,Options,Call,NIFTY,19700.0,0

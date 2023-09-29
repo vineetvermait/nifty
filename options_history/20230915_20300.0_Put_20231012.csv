@@ -1,0 +1,6 @@
+close,datetime,exchange_code,expiry_date,high,low,open,open_interest,product_type,right,stock_code,strike_price,volume
+205.65,2023-09-15 15:25:00,NFO,2023-10-12,205.65,205.65,205.65,0,Options,Put,NIFTY,20300.0,50
+204.3,2023-09-15 15:26:00,NFO,2023-10-12,205.65,204.3,205.65,50,Options,Put,NIFTY,20300.0,0
+204.3,2023-09-15 15:27:00,NFO,2023-10-12,204.3,204.3,204.3,50,Options,Put,NIFTY,20300.0,50
+204.3,2023-09-15 15:28:00,NFO,2023-10-12,204.3,204.3,204.3,50,Options,Put,NIFTY,20300.0,0
+204.3,2023-09-15 15:29:00,NFO,2023-10-12,204.3,204.3,204.3,50,Options,Put,NIFTY,20300.0,0
