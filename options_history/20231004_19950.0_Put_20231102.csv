@@ -1,0 +1,3 @@
+close,datetime,exchange_code,expiry_date,high,low,open,open_interest,product_type,right,stock_code,strike_price,volume
+469.6,2023-10-04 14:57:00,NFO,2023-11-02,469.6,469.6,469.6,0,Options,Put,NIFTY,19950.0,50
+469.6,2023-10-04 15:00:00,NFO,2023-11-02,469.6,469.6,469.6,0,Options,Put,NIFTY,19950.0,0
