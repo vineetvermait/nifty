@@ -1,4 +1,0 @@
-close,datetime,exchange_code,expiry_date,high,low,open,open_interest,product_type,right,stock_code,strike_price,volume
-3.35,2023-11-23 15:26:00,NFO,2023-12-14,3.35,3.35,3.35,0,Options,Call,NIFTY,21300.0,0
-3.35,2023-11-23 15:27:00,NFO,2023-12-14,3.35,3.35,3.35,0,Options,Call,NIFTY,21300.0,100
-3.35,2023-11-23 15:28:00,NFO,2023-12-14,3.35,3.35,3.35,0,Options,Call,NIFTY,21300.0,0
